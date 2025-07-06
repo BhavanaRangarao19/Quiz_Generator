@@ -96,19 +96,20 @@ This will launch the React app at `http://localhost:3000`
 ---
 
 ## 📸 Screenshots
-![Screenshot 111](./images/Screenshot%28111%29.png)
-![Screenshot 112](./images/Screenshot%28112%29.png)
-![Screenshot 113](./images/Screenshot%28113%29.png)
-![Screenshot 114](./images/Screenshot%28114%29.png)
-![Screenshot 115](./images/Screenshot%28115%29.png)
-![Screenshot 116](./images/Screenshot%28116%29.png)
-![Screenshot 117](./images/Screenshot%28117%29.png)
-![Screenshot 118](./images/Screenshot%28118%29.png)
-![Screenshot 119](./images/Screenshot%28119%29.png)
-![Screenshot 120](./images/Screenshot%28120%29.png)
-![Screenshot 121](./images/Screenshot%28121%29.png)
-![Screenshot 122](./images/Screenshot%28122%29.png)
-![Screenshot 123](./images/Screenshot%28123%29.png)
+![Screenshot 111](Quiz-Generator/images/Screenshot%28111%29.png)
+![Screenshot 112](Quiz-Generator/images/Screenshot%28112%29.png)
+![Screenshot 113](Quiz-Generator/images/Screenshot%28113%29.png)
+![Screenshot 114](Quiz-Generator/images/Screenshot%28114%29.png)
+![Screenshot 115](Quiz-Generator/images/Screenshot%28115%29.png)
+![Screenshot 116](Quiz-Generator/images/Screenshot%28116%29.png)
+![Screenshot 117](Quiz-Generator/images/Screenshot%28117%29.png)
+![Screenshot 118](Quiz-Generator/images/Screenshot%28118%29.png)
+![Screenshot 119](Quiz-Generator/images/Screenshot%28119%29.png)
+![Screenshot 120](Quiz-Generator/images/Screenshot%28120%29.png)
+![Screenshot 121](Quiz-Generator/images/Screenshot%28121%29.png)
+![Screenshot 122](Quiz-Generator/images/Screenshot%28122%29.png)
+![Screenshot 123](Quiz-Generator/images/Screenshot%28123%29.png)
+
 
 
 ---
