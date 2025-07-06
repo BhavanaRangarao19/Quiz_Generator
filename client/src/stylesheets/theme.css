@@ -1,11 +1,11 @@
 :root {
-  --primary: #0F3460;
+  --primary: #053d1d;
   --secondary: #ff5722;
   --success: #6fbf71;
   --info: #00bcd4;
   --warning: #e47943;
   --danger: #f44336;
-  --light: #f1f1f1;
+  --light: #d0d8ce;
   --dark: #212121;
 }
 
@@ -13,7 +13,7 @@
     background-color: var(--primary) !important;
 }
 .bg-white{
-    background-color: #fff !important;
+    background-color: #9fd19a !important;
 }
 .text-white{
     color: white !important;

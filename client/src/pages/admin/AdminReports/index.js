@@ -14,16 +14,44 @@ function AdminReports() {
     examName: "",
     userName: "",
   });
+
+  const calculatePercentage = (obtainedMarks, totalMarks) => {
+    return ((obtainedMarks / totalMarks) * 100).toFixed(2);
+  };
+
+  const processData = (data) => {
+    return data
+      .map((report) => {
+        const totalMarks = report.exam.totalMarks;
+        const obtainedMarks = report.result.correctAnswers.length;
+        const percentage = calculatePercentage(obtainedMarks, totalMarks);
+        return {
+          ...report,
+          percentage,
+        };
+      })
+      .sort((a, b) => b.percentage - a.percentage)
+      .map((report, index) => ({
+        ...report,
+        rank: index + 1,
+      }));
+  };
+
   const columns = [
     {
-      title: "Exam Name",
-      dataIndex: "examName",
-      render: (text, record) => <>{record.exam.name}</>,
+      title: "Rank",
+      dataIndex: "rank",
+      key: "rank",
     },
     {
       title: "User Name",
       dataIndex: "userName",
       render: (text, record) => <>{record.user.name}</>,
+    },
+    {
+      title: "Exam Name",
+      dataIndex: "examName",
+      render: (text, record) => <>{record.exam.name}</>,
     },
     {
       title: "Date",
@@ -34,18 +62,18 @@ function AdminReports() {
     },
     {
       title: "Total Marks",
-      dataIndex: "totalQuestions",
+      dataIndex: "totalMarks",
       render: (text, record) => <>{record.exam.totalMarks}</>,
     },
     {
-      title: "Passing Marks",
-      dataIndex: "correctAnswers",
-      render: (text, record) => <>{record.exam.passingMarks}</>,
+      title: "Obtained Marks",
+      dataIndex: "obtainedMarks",
+      render: (text, record) => <>{record.result.correctAnswers.length}</>,
     },
     {
-      title: "Obtained Marks",
-      dataIndex: "correctAnswers",
-      render: (text, record) => <>{record.result.correctAnswers.length}</>,
+      title: "Percentage",
+      dataIndex: "percentage",
+      render: (text, record) => <>{record.percentage}%</>,
     },
     {
       title: "Verdict",
@@ -59,7 +87,8 @@ function AdminReports() {
       dispatch(ShowLoading());
       const response = await getAllReports(tempFilters);
       if (response.success) {
-        setReportsData(response.data);
+        const processedData = processData(response.data);
+        setReportsData(processedData);
       } else {
         message.error(response.message);
       }
@@ -76,7 +105,7 @@ function AdminReports() {
 
   return (
     <div>
-      <PageTitle title="Reports" />
+      <PageTitle title="Leaderboard" />
       <div className="divider"></div>
       <div className="flex gap-2">
         <input

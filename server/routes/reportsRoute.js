@@ -70,6 +70,26 @@ router.post("/get-all-reports", authMiddleware, async (req, res) => {
   }
 });
 
+// Get leaderboard for a specific exam
+router.get("/leaderboard/:examId", async (req, res) => {
+  try {
+    const leaderboard = await Report.find({ exam: req.params.examId })
+      .sort({ totalMarks: -1 })
+      .populate("user", "name email");
+
+    res.send({
+      success: true,
+      data: leaderboard,
+    });
+  } catch (error) {
+    res.send({
+      success: false,
+      message: error.message,
+    });
+  }
+});
+
+
 // get all reports by user
 router.post("/get-all-reports-by-user", authMiddleware, async (req, res) => {
   try {

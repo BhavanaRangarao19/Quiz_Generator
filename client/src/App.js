@@ -18,6 +18,9 @@ import { useSelector } from "react-redux";
 import WriteExam from "./pages/user/WriteExam";
 import UserReports from "./pages/user/UserReports";
 import AdminReports from "./pages/admin/AdminReports";
+import Leaderboard from "./pages/user/Leaderboard";
+
+
 
 function App() {
   const { loading } = useSelector((state) => state.loader);
@@ -95,6 +98,15 @@ function App() {
               <ProtectedRoute>
                 <AdminReports />
               </ProtectedRoute>
+            }
+          />
+
+          <Route
+            path="/user/leaderboard/:id"
+            element={
+             <ProtectedRoute>
+                <Leaderboard />
+            </ProtectedRoute>
             }
           />
         </Routes>

@@ -18,7 +18,7 @@ global.Headers = Headers; // Polyfill Headers globally
 require("dotenv").config();
 
 // Initialize Gemini API
-const apiKey = "your_api_key_here";//process.env.GEMINI_API_KEY; // Ensure this is set in your .env file
+const apiKey = "AIzaSyCw9ZFlEUgCTN0w4pl_xrx_oAYO_hqntZw";//process.env.GEMINI_API_KEY; // Ensure this is set in your .env file
 if (!apiKey) {
   console.error("Error: GEMINI_API_KEY is not set in the .env file.");
   process.exit(1); // Exit the application if the API key is missing

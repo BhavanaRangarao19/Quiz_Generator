@@ -29,3 +29,13 @@ export const getAllReportsByUser = async () => {
         return error.response.data;
     }
 }
+
+//get users by exam
+export const getLeaderboard = async (examId) => {
+  try {
+    const response = await axiosInstance.get(`/api/reports/leaderboard/${examId}`);
+    return response.data;
+  } catch (error) {
+    return { success: false, message: error.message };
+  }
+};
