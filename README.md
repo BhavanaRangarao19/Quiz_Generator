@@ -96,14 +96,14 @@ This will launch the React app at `http://localhost:3000`
 ---
 
 ## 📸 Screenshots
-##Admin pages
+## Admin pages
 ![Screenshot 111](./images/Screenshot1.png)
 ![Screenshot 112](./images/Screenshot2.png)
 ![Screenshot 113](./images/Screenshot3.png)
 ![Screenshot 114](./images/Screenshot4.png)
 ![Screenshot 115](./images/Screenshot5.png) 
 ![Screenshot 116](./images/Screenshot6.png)
-##user Pages
+## user Pages
 ![Screenshot 117](./images/Screenshot7.png)
 ![Screenshot 118](./images/Screenshot8.png)
 ![Screenshot 119](./images/Screenshot9.png)
