@@ -1,54 +1,112 @@
 
-# Quiz-Application
-Quiz-Application Using MERN Stack Technology: In this project there are two portals one for admin and one for user <br><b>Admin:</b> admin can create quiz , add question to the quiz , modify the quiz , modify the answers or questions and can view reports of all users <br><b>User:</b> user can login and attempt the quiz and view the result and find the answers of all the question  quiz completion
-##How to run this 
-#
-## Installation
+# 🎓 Quiz Application using MERN & Gemini AI
+
+Welcome to the **Quiz Generator** — a smart and interactive quiz platform built using the **MERN stack** (MongoDB, Express, React, Node.js) with a powerful twist: it uses **Gemini AI** to automatically generate quiz questions from any given text!
+
+Whether you're an **admin** creating engaging quizzes or a **user** testing your knowledge, this app makes learning fun and efficient.
+
+---
+
+## ✨ What’s Inside
+
+### 👩‍🏫 Admin Portal
+
+- Create and manage quizzes  
+- Add, edit, or remove questions and answers  
+- Generate quiz questions automatically using **Gemini AI** by just entering text  
+- View detailed reports of user performance  
+
+### 🙋‍♂️ User Portal
+
+- Register and log in securely  
+- Attempt quizzes assigned by the admin  
+- View results instantly after submitting  
+- Review correct answers and explanations  
+
+---
+
+## 🧠 AI-Powered Quiz Generation
+
+One of the coolest features: Admins can paste **any paragraph or text**, and the system will use **Google’s Gemini API** to:
+- Understand the content  
+- Automatically generate MCQs  
+- Add the questions directly to your quiz  
+
+No manual question setting needed!
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: React.js, Axios, Tailwind CSS / Bootstrap  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB Atlas / Local MongoDB  
+- **AI Integration**: Gemini Pro API from Google  
+
+---
+
+## 🚀 Getting Started
+
+Here’s how to run the project locally:
+
+### 1. Clone the Repository
 
 ```bash
-# Make sure you have your own url for mongodb cluster add it in the .env file to store data in your databases for Ex-
-mongodb+srv://<Name>:<Password>@cluster0.4u4rtje.mongodb.net/
-
-# Install dependencies for server in the root directory
-npm install
-# and run the server
-npm start
-
-# open the another terminal and go to the client directory and install the dependencies for client
-cd .\client\
-npm install
-# after installation run the client
-npm start
-
-
-# Server runs on  http://localhost:3000
+git clone https://github.com/BhavanaRangarao19/Quiz_Generator.git
+cd Quiz_Generator
 ```
 
+### 2. Setup the Backend
 
+```bash
+cd server
+npm install
+```
 
-<i><h2>1) Registration Page</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/register.png"/>
-<i><h2>2) Login Page</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/login.png"/>
-<i><h2>3) Admin Profile Home Page</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_homepage.png"/>
-<i><h2>4) Add Quiz Page in which Admin Post the Quiz into the MongoDB Database</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_add_exam.png"/>
-<i><h2>5) Add Questions in Quiz </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_add_ques.png"/>
-<i><h2>6) Edit Exam by Admin </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_edit_exam.png"/>
-<i><h2>7) Edit Que by Admin </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_edit_que.png"/>
-<i><h2>8) User's Profile </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/user_home.png"/>
-<i><h2>9) Instructions before exam </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/User_instruction.png"/>
+Create a `.env` file inside the `server/` folder with the following:
 
-<i><h2>10) User Result</h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/user_result.png"/>
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+GEMINI_API_KEY=your_gemini_api_key
+```
 
-<i><h2>11) Reports of all users that can be seen by only admin </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/admin_report.png"/>
-<i><h2>12) User can see only his/her report </h2></i>
-<img src="https://github.com/kanishkpatel1/Quiz-Application/blob/main/images/user_report.png"/>
+Then run the backend:
+
+```bash
+npm run dev
+```
+
+### 3. Setup the Frontend
+
+```bash
+cd ../client
+npm install
+npm start
+```
+This will launch the React app at `http://localhost:3000`
+
+---
+
+## 🌐 App Access
+
+- **Admin Portal**: `http://localhost:3000/admin`  
+- **User Portal**: `http://localhost:3000/user`  
+
+---
+
+## 📸 Screenshots
+
+_Add screenshots of your app here (UI, dashboard, quiz creation, result page, etc.)_
+
+---
+
+## 🤝 Contributing
+Found a bug or have a feature in mind? Feel free to fork the repo and submit a pull request.
+
+---
+
+## 👩‍💻 Author
+**Bhavana Bellamkonda**  
+GitHub: [@BhavanaRangarao19](https://github.com/BhavanaRangarao19)  
+LinkedIn: [Bhavana Bellamkonda](https://www.linkedin.com/in/bhavana-bellamkonda-br89)
