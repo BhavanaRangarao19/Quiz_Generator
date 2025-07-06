@@ -96,8 +96,7 @@ This will launch the React app at `http://localhost:3000`
 ---
 
 ## 📸 Screenshots
-
-_Add screenshots of your app here (UI, dashboard, quiz creation, result page, etc.)_
+./images/Screenshot(111).png
 
 ---
 
