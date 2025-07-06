@@ -96,9 +96,9 @@ This will launch the React app at `http://localhost:3000`
 ---
 
 ## 📸 Screenshots
-![Screenshot 111](Quiz-Generator/images/Screenshot1.png)
-![Screenshot 112](Quiz-Generator/images/Screenshot2.png)
-![Screenshot 113](Quiz-Generator/images/Screenshot3.png)
+![Screenshot 111](./images/Screenshot1.png)
+![Screenshot 112](./images/Screenshot2.png)
+![Screenshot 113](./images/Screenshot3.png)
 ![Screenshot 114](Quiz-Generator/images/Screenshot%28114%29.png)
 ![Screenshot 115](Quiz-Generator/images/Screenshot%28115%29.png)
 ![Screenshot 116](Quiz-Generator/images/Screenshot%28116%29.png)
